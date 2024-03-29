@@ -1,19 +1,13 @@
-function introduction(name) {
-  console.log(`Hi, my name is ${name}.`);
+function introduction(name){
+  return `Hi, my name is ${name}.`;
 }
-
-introduction("Aki");
-
-function introductionWithLanguage(name, language) {
-  console.log(`My name is ${name} and I'm studying ${language}.`);
+function introductionWithLanguage(name,language){
+  return `Hi, my name is ${name} and I am learning to program in ${language}.`;
 }
+console.log(introduction('Aki'));
+console.log(introductionWithLanguage('Aki', 'Ember.js'));
 
-introductionWithLanguage("Aki", "Ember.js");
-
-function introductionWithLanguageOptional(name, language = "JavaScript") {
-  console.log(`My name is ${name} and I'm learing to program in ${language}.`);
+function introductionWithLanguageOptional(name, language = 'JavaScript'){
+  return `Hi, my name is ${name} and I am learning to program in ${language}.`
 }
-
-introductionWithLanguageOptional ("Aki");
-
-introductionWithLanguageOptional ("Gracie", "Python");
+console.log(introductionWithLanguageOptional('Aki'));
